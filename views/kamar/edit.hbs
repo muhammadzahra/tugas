@@ -1,0 +1,21 @@
+<h3>ubah Kamar</h3>
+<hr>
+<form action="/admin/kamar/{{ kamar.id }}/update" method="post">
+    <div class="form-group">
+        <label for="inputNamaKamar">nomor Kamar</label>
+        <input type="text" name="nomer" value="{{ kamar.nomer }}" placeholder="Masukkan nomer" id="inputNomer"
+            class="form-control col-4">
+    </div>
+    <div class="form-group">
+        <label for="inputLantai">Lantai</label>
+        <input type="text" name="lantai" value="{{ kamar.lantai }}" placeholder="Masukkan lantai" id="inputLantai"
+            class="form-control col-4">
+    </div>
+    <div class="form-group">
+        <label for="inputFasilitas">Fasilitas</label>
+        <input type="text" name="fasilitas" value="{{ kamar.fasilitas }}" placeholder="Masukkan fasilitas"
+            id="inputFasilitas" class="form-control col-4">
+    </div>
+    <button type="submit" class="btn btn-primary">Simpan</button>
+    <a href="/admin/kamar" class="btn btn-default">Kembali</a>
+</form>

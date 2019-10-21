@@ -1,0 +1,27 @@
+<h3>Daftar Kamar</h3>
+<hr>
+<a href="/admin/kamar/add" class="btn btn-sm btn-primary">Tambah Kamar</a>
+<div class="mb-2"></div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nomor</th>
+            <th scope="col">Lantai</th>
+            <th scope="col">Fasilitas</th>
+            <th scope="col">Opsi</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each kamar}}
+        <tr>
+            <td>{{ nomer }}</td>
+            <td>{{ lantai }}</td>
+            <td>{{ fasilitas }}</td>
+            <td>
+                <a href="/admin/kamar/edit/{{ id }}">Edit</a>
+                <a href="/admin/kamar/{{ id }}/delete" class="text-danger">Hapus</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

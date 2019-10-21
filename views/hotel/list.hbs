@@ -1,0 +1,22 @@
+<h3>Daftar hotel</h3>
+<hr>
+<div class="mb-2"></div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nama Hotel</th>
+            <th scope="col">Alamat</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each ubah}}
+        <tr>
+            <td>{{ namahotel }}</td>
+            <td>{{ alamat }}</td>
+            <td>
+                <a href="/admin/hotel/edit/{{ id }}">Edit</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
